@@ -78,6 +78,7 @@ body {
 button[data-bs-dismiss="alert"] {
    color: var(--bs-warning-text);
    border-color: var(--bs-warning-text);
+   margin-top: 1rem;
 }
 .container-md {
    padding: 1.25rem 1.5rem;
