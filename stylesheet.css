@@ -59,10 +59,11 @@ a[onclick="scrollie()"] {
    filter: blur(9px);
 }
 .alert-warning button {
-   border: 1px solid var(--bs-warning);
+   border: 1px solid var(--bs-warning-text);
    border-radius: inherit;
-   color: var(--bs-warning);
    margin-left: 35vw;
+   color: var(--bs-warning-text);
+   margin-top: 1rem;
 }
 #b img {
    margin: 1rem auto;
@@ -74,11 +75,6 @@ body {
 .btn-close {
    float: right;
    opacity: 100%;
-}
-button[data-bs-dismiss="alert"] {
-   color: var(--bs-warning-text);
-   border-color: var(--bs-warning-text);
-   margin-top: 1rem;
 }
 .container-md {
    padding: 1.25rem 1.5rem;
