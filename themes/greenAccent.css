@@ -3,6 +3,8 @@
       color: #20c997;
    }
 }
-a {
-   color: #199C75;
+@media (prefers-color-scheme: light) {
+   a {
+      color: #199C75;
+   }
 }
