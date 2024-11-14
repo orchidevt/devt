@@ -59,7 +59,8 @@ a[onclick="scrollie()"] {
    filter: blur(9px);
 }
 .alert-warning button {
-   border: 1px solid var(--bs-warning-text);
+   border: 1px solid;
+   border-color: var(--bs-warning-text);
    border-radius: inherit;
    margin-left: 35vw;
    color: var(--bs-warning-text);
