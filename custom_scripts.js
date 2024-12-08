@@ -73,7 +73,6 @@ function spoilerWarning() {
 function tableHeadings() {
    const hdngs = document.getElementsByClassName("th");
    hdngs[0].id = "statBarHeading";
-   hdngs[1].className = "p-0";
    for (let i=0; i < hdngs.length; i++) {
       hdngs[i].setAttribute("colspan", "2");
    }
@@ -84,7 +83,7 @@ function tableSpanClassSmalls() {
    for (let i=0; i < tables.length; i++) {
       const spansies = tables[i].getElementsByTagName("span");
       for (let k=0; k < spansies.length; k++) {
-         spansies[k].className = "small";
+         spansies[k].className += " small";
       }
    }
 }
