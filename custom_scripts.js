@@ -109,7 +109,7 @@ function generateStatBar() {
 function generateLeisureBars() {
    const bars = document.getElementsByTagName("table")[1];
    const hdngs = bars.getElementsByTagName("th");
-   for (let i=1; i < hdngs.length; i++) {
+   for (let i=0; i < hdngs.length; i++) {
       hdngs[i].setAttribute("colspan", "2");
    }
 }
