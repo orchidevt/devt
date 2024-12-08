@@ -80,7 +80,7 @@ function generateContentWarning() {
 
 function generateSpoilerWarning() {
    const spwar = document.getElementsByClassName("spwar")[0];
-   spwar.className = "alert alert-danger";
+   spwar.className = "alert alert-warning clearfix";
    spwar.setAttribute("data-bs-theme", "dark");
    spwar.innerHTML = '<i class="fa fa-exclamation-triangle"></i>' + spwar.innerHTML;
    const closebtn = spwar.getElementsByClassName("btn")[0];
