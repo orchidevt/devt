@@ -71,7 +71,7 @@ function spoilerWarning() {
 }
 
 function tableHeadings() {
-   const hdngs = document.getElementsByClassName("th");
+   const hdngs = document.getElementsByTagName("th");
    hdngs[0].id = "statBarHeading";
    for (let i=0; i < hdngs.length; i++) {
       hdngs[i].setAttribute("colspan", "2");
