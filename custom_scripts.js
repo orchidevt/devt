@@ -10,7 +10,7 @@ function collapsibles() {
    const heads = document.getElementsByTagName("h1");
    let placeholder = '';
    
-   for (let i=1; i < heads.length; i++) 
+   for (let i=0; i < heads.length; i++) 
    {
       placeholder = "H" + String(i);
       const collapsible = heads[i].nextElementSibling;
