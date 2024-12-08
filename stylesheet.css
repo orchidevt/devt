@@ -19,7 +19,7 @@
    }
 }
 @media (prefers-color-scheme: dark) {
-   body, .alert-secondary, .toast, .modal-content, table {
+   a[onclick="scrollie()"], body, .alert-secondary, .alert-warning, .toast, .modal-content, table {
       background-color: #000;
    }
    footer p {
@@ -50,6 +50,7 @@ a[onclick="scrollie()"] {
    border-radius: 9px;
    border: 2px solid rgba(255,255,255,0.7);
    font-size: 19px;
+   background-color: var(--bs-body);
 }
 .alert ul {
    margin-bottom: 0;
