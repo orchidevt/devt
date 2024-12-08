@@ -1,34 +1,9 @@
-function scrollie() {
-   window.scrollTo(0, 0);
-}
-
-function setDarkMode() {
-   let theeme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
-   document.documentElement.setAttribute('data-bs-theme', theeme);
-}
-
-function toggleHeadingArrow(event) {
-   var triggerHeading = event.currentTarget;
-   var mid = triggerHeading.children[0];
-   var icn = mid.children[0];
-   const listy = icn.classList;
-   var fst, snd;
-   fst = snd = 'fa-angle-'
-   if (listy.contains('fa-angle-down')) {
-      fst += 'down';
-      snd += 'up';
+function breadcrumbs() {
+   const placeholder = document.getElementsByClassName("breadcrumb")[0];
+   const menue = placeholder.children;
+   for (let i=0; i < menue.length; i++) {
+      menue[i].className = "breadcrumb-item";
    }
-   else {
-      fst += 'up';
-      snd += 'down';
-   }
-   listy.remove(fst);
-   listy.add(snd);
-}
-
-function icons() {
-   const titularHeading = document.getElementById("hd");
-   titularHeading.innerHTML += '<i class="fa fa-paragraph"></i><a href="#" class="disabled"><i class="fa fa-language"></i></a>';
 }
 
 function collapsibles() {
@@ -45,6 +20,20 @@ function collapsibles() {
       heads[i].outerHTML = '<a onclick="toggleHeadingArrow(event)" data-bs-toggle="collapse" data-bs-target="#' + placeholder + '">' + heads[i].outerHTML + '</a>';
       heads[i].innerHTML = '<i class="fa fa-angle-down"></i>' + heads[i].innerHTML;
    }
+}
+
+function contentWarning() {
+   const cwar = document.getElementsByClassName("alert")[0];
+   cwar.className = "alert text-bg-danger clearfix";
+   cwar.setAttribute("data-bs-theme", "dark");
+   cwar.innerHTML = '<i class="fa fa-exclamation-triangle"></i>' + cwar.innerHTML;
+   const closebtn = cwar.getElementsByClassName("btn-close")[0];
+   closebtn.setAttribute("data-bs-dismiss", "alert");
+}
+
+function icons() {
+   const titularHeading = document.getElementById("hd");
+   titularHeading.innerHTML += '<i class="fa fa-paragraph"></i><a href="#" class="disabled"><i class="fa fa-language"></i></a>';
 }
 
 function motesmodals() {
@@ -64,21 +53,13 @@ function motesmodals() {
    }
 }
 
-function breadcrumbs() {
-   const placeholder = document.getElementsByClassName("breadcrumb")[0];
-   const menue = placeholder.children;
-   for (let i=0; i < menue.length; i++) {
-      menue[i].className = "breadcrumb-item";
-   }
+function scrollie() {
+   window.scrollTo(0, 0);
 }
 
-function contentWarning() {
-   const cwar = document.getElementsByClassName("alert")[0];
-   cwar.className = "alert text-bg-danger clearfix";
-   cwar.setAttribute("data-bs-theme", "dark");
-   cwar.innerHTML = '<i class="fa fa-exclamation-triangle"></i>' + cwar.innerHTML;
-   const closebtn = cwar.getElementsByClassName("btn-close")[0];
-   closebtn.setAttribute("data-bs-dismiss", "alert");
+function setDarkMode() {
+   let theeme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+   document.documentElement.setAttribute('data-bs-theme', theeme);
 }
 
 function spoilerWarning() {
@@ -106,4 +87,23 @@ function tableSpanClassSmalls() {
          spansies[k].className = "small";
       }
    }
+}
+
+function toggleHeadingArrow(event) {
+   var triggerHeading = event.currentTarget;
+   var mid = triggerHeading.children[0];
+   var icn = mid.children[0];
+   const listy = icn.classList;
+   var fst, snd;
+   fst = snd = 'fa-angle-'
+   if (listy.contains('fa-angle-down')) {
+      fst += 'down';
+      snd += 'up';
+   }
+   else {
+      fst += 'up';
+      snd += 'down';
+   }
+   listy.remove(fst);
+   listy.add(snd);
 }
