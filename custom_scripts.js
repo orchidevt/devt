@@ -54,7 +54,7 @@ function generateHeader() {
    
 function generateFooter() {
    const foot = document.createElement("footer");
-   foot.innerHTML = '<i class="fas fa-copyright"></i>all rights reserved · <a href="mailto:simplelogin-newsletter.grandson898@simplelogin.com">contact</a>';
+   foot.innerHTML = '<p><i class="fas fa-copyright"></i>all rights reserved · <a href="mailto:simplelogin-newsletter.grandson898@simplelogin.com">contact</a></p>';
    document.body.appendChild(foot);
 }
 
