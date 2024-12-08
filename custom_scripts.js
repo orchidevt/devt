@@ -33,7 +33,7 @@ function contentWarning() {
 
 function icons() {
    const titularHeading = document.getElementById("hd");
-   titularHeading.innerHTML += '<i class="fa fa-paragraph"></i><a href="#" class="disabled"><i class="fa fa-language"></i></a>';
+   titularHeading.innerHTML += '<a href="#" class="disabled"><i class="fa fa-language"></i></a>';
 }
 
 function motesmodals() {
