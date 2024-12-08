@@ -36,7 +36,7 @@ function motesmodals() {
    }
 }
 
-function generateScrollie {
+function generateScrollie() {
    const scrollie = document.createElement("a");
    scrollie.className = "btn btn-primary";
    scrollie.setAttribute("onclick", "scrollie()");
