@@ -90,7 +90,7 @@ function generateToasts() {
    const toasties = document.getElementsByClassName("toast");
    for (let i=0; i < toasties.length; i++) {
       toasties[i].className += " show";
-      toasties[i].children[0].innerHTML = '<strong>' + toasties[i].children[0].innerHTML + '</strong><button type="button" class="btn-close" data-bs-dismiss="toast"</button>';
+      toasties[i].children[0].innerHTML = '<strong>' + toasties[i].children[0].innerHTML + '</strong><button class="btn-close" data-bs-dismiss="toast"></button>';
    }
 }
 
