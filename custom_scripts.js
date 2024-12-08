@@ -36,41 +36,16 @@ function motesmodals() {
    }
 }
 
-function generateScrollie() {
-   const scrollie = document.createElement("a");
-   scrollie.className = "btn btn-primary";
-   scrollie.setAttribute("onclick", "scrollie()");
-   scrollie.innerHTML = '<i class="fa fa-arrow-up"></i>';
-   document.body.appendChild(scrollie);
-}
-
-function generateHeader() {
+function breadcrumbs() {
    const placeholder = document.getElementsByClassName("breadcrumb")[0];
    const menue = placeholder.children;
    for (let i=0; i < menue.length; i++) {
       menue[i].className = "breadcrumb-item";
    }
 }
-   
-function generateFooter() {
-   const foot = document.createElement("footer");
-   foot.innerHTML = '<p><i class="fas fa-copyright"></i>all rights reserved · <a href="mailto:simplelogin-newsletter.grandson898@simplelogin.com">contact</a></p>';
-   document.body.appendChild(foot);
-}
 
-function generateSpoilers() {
-   const spoilers= document.getElementsByClassName("spoiler");
-   for (let i=0; i < spoilers.length; i++) {
-      spoilers[i].className += " small";
-      spoilers[i].setAttribute("data-bs-toggle", "collapse");
-      const ref = spoilers[i].getAttribute("href");
-      spoilers[i].removeAttribute("href");
-      spoilers[i].setAttribute("data-bs-target", ref);
-   }
-}
-
-function generateContentWarning() {
-   const cwar = document.getElementsByClassName("cwar")[0];
+function contentWarning() {
+   const cwar = document.getElementsByClassName("alert")[0];
    cwar.className = "alert text-bg-danger clearfix";
    cwar.setAttribute("data-bs-theme", "dark");
    cwar.innerHTML = '<i class="fa fa-exclamation-triangle"></i>' + cwar.innerHTML;
@@ -78,44 +53,25 @@ function generateContentWarning() {
    closebtn.setAttribute("data-bs-dismiss", "alert");
 }
 
-function generateSpoilerWarning() {
-   const spwar = document.getElementsByClassName("spwar")[0];
-   spwar.className = "alert alert-warning clearfix";
-   spwar.innerHTML = '<i class="fa fa-exclamation-triangle"></i>' + spwar.innerHTML;
-   const closebtn = spwar.getElementsByClassName("btn")[0];
+function spoilerWarning() {
+   const spar = document.getElementsByClassName("alert")[1];
+   spar.className = "alert alert-warning clearfix";
+   spar.innerHTML = '<i class="fa fa-exclamation-triangle"></i>' + spar.innerHTML;
+   const closebtn = spar.getElementsByClassName("btn")[0];
    closebtn.setAttribute("data-bs-dismiss", "alert");
 }
 
-function generateToasts() {
-   const toasties = document.getElementsByClassName("toast");
-   for (let i=0; i < toasties.length; i++) {
-      toasties[i].className += " show";
-      toasties[i].children[0].innerHTML = '<strong>' + toasties[i].children[0].innerHTML + '</strong><button class="btn-close" data-bs-dismiss="toast"></button>';
-   }
-}
-
-function generateStatBar() {
-   const statbar = document.getElementsByTagName("table")[0];
-   const placeholder = statbar.children[0];
-   const hdng = placeholder.children[0];
-   hdng.id = "statBarHeading";
-   const headings = statbar.getElementsByTagName("th");
-   for (let i=0; i < headings.length; i++) {
-      headings[i].setAttribute("colspan", "2");
-   }
-   headings[1].className = "p-0";
-}
-
-function generateLeisureBars() {
-   const bars = document.getElementsByTagName("table")[1];
-   const hdngs = bars.getElementsByTagName("th");
+function tableHeadings() {
+   const hdngs = document.getElementsByClassName("th");
+   hdngs[0].id = "statBarHeading";
+   hdngs[1].className = "p-0";
    for (let i=0; i < hdngs.length; i++) {
       hdngs[i].setAttribute("colspan", "2");
    }
 }
 
-function generateTableSpanClassSmalls() {
-   const tables = document.getElementsByTagName("tables");
+function tableSpanClassSmalls() {
+   const tables = document.getElementsByTagName("table");
    for (let i=0; i < tables.length; i++) {
       const spansies = tables[i].getElementsByTagName("span");
       for (let k=0; k < spansies.length; k++) {
