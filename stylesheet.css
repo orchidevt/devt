@@ -19,7 +19,7 @@
    }
 }
 @media (prefers-color-scheme: dark) {
-   a[onclick="scrollie()"], body, .alert-secondary, .alert-warning, .toast, .modal-content, table {
+   a[onclick="scrollie()"], body, .alert-secondary, .alert-warning, .toast, .modal-content, table, i[data-bs-toggle="tooltip"] {
       background-color: #000;
    }
    footer p {
