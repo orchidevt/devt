@@ -8,12 +8,17 @@
       width: 300px !important;
       margin: 0 8px !important;
    }
+   .float-md-end {
+      margin-left: 1.5rem !important;
+   }
+   .float-md-start {
+      margin-right: 1.5rem !important;
+   }
    h1, .alert {
       overflow: hidden;
    }
    table {
       max-width: 30%;
-      margin-left: 1.5rem !important;
       margin-bottom: 1.5rem !important;
    }
 }
@@ -86,8 +91,9 @@ body {
 .container-md .fa {
    margin-right: .5rem;
 }
-.fa-external-link {
-   margin-right: 0 !important;
+.fa-external-link, .fa-wikipedia-w {
+   margin-right: .2rem !important;
+   margin-left: -0.25rem;
 }
 .fa-paragraph {
    float: right;
