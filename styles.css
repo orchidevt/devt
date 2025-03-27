@@ -61,7 +61,7 @@ a[onclick="scrollie()"] {
 }
 .alert-danger > ul {
    background-color: var(--bs-body-bg);
-   color: var(--bs-body);
+   color: var(--bs-body-color);
    width: inherit;
    margin: 1rem -1rem -1rem;
    padding: .5rem 2.5rem;
