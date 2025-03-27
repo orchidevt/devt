@@ -95,13 +95,15 @@ body {
    margin-right: .5rem;
 }
 #cwsp {
+   background-color: var(--bs-body-bg);
+   color: var(--bs-body);
    width: inherit;
    margin: 1rem -1rem -1rem;
    padding: .5rem 2.5rem;
    border-bottom-left-radius: inherit;
    border-bottom-right-radius: inherit;
 }
-#cswp {
+#cswp a {
    color: var(--bs-primary);
 }
 .fa-external-link, .fa-wikipedia-w {
