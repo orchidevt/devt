@@ -36,6 +36,12 @@
       filter: brightness(80%) contrast(110%);
    }
 }
+@media (prefers-color-scheme: light) {
+   .alert-danger > ul {
+      background-color: #fff;
+      color: #000;
+   }
+}
 a {
    text-decoration-line: none;
 }
@@ -60,8 +66,6 @@ a[onclick="scrollie()"] {
    margin-bottom: 0;
 }
 .alert-danger > ul {
-   background-color: var(--bs-body-bg);
-   color: var(--bs-body-color);
    width: inherit;
    margin: 1rem -1rem -1rem;
    padding: .5rem 2.5rem;
