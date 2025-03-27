@@ -23,11 +23,8 @@
    }
 }
 @media (prefers-color-scheme: dark) {
-   a[onclick="scrollie()"], .alert, body, #cwsp, .modal-content, table, .toast {
+   a[onclick="scrollie()"], .alert, body, .alert-danger > ul, .modal-content, table, .toast {
       background-color: #000;
-   }
-   #cwsp a {
-      color: var(--bs-primary-text-emphasis);
    }
    footer p {
       border-top: 1px dotted var(--bs-tertiary-bg) !important;
@@ -62,20 +59,18 @@ a[onclick="scrollie()"] {
 .alert ul {
    margin-bottom: 0;
 }
+.alert-danger > ul {
+   background-color: var(--bs-body-bg);
+   color: var(--bs-body);
+   width: inherit;
+   margin: 1rem -1rem -1rem;
+   padding: .5rem 2.5rem;
+   border-bottom-left-radius: inherit;
+   border-bottom-right-radius: inherit;
+}
 .alert-secondary {
    background-color: var(--bs-body);
    color: var(--bs-body-color);
-}
-.alert-warning + div {
-   filter: blur(9px);
-}
-.alert-warning button {
-   border: 1px solid;
-   border-color: var(--bs-warning-text);
-   border-radius: inherit;
-   margin-left: 35vw;
-   color: var(--bs-warning-text);
-   margin-top: 1rem;
 }
 #b img {
    margin: 1rem auto;
@@ -93,18 +88,6 @@ body {
 }
 .container-md .fa {
    margin-right: .5rem;
-}
-#cwsp {
-   background-color: var(--bs-body-bg);
-   color: var(--bs-body);
-   width: inherit;
-   margin: 1rem -1rem -1rem;
-   padding: .5rem 2.5rem;
-   border-bottom-left-radius: inherit;
-   border-bottom-right-radius: inherit;
-}
-#cswp a {
-   color: var(--bs-primary);
 }
 .fa-external-link, .fa-wikipedia-w {
    margin-right: .2rem !important;
