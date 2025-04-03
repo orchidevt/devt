@@ -52,6 +52,10 @@ function scrollie() {
    window.scrollTo(0, 0);
 }
 
+function scrollieSoccer() {
+   window.scrollTo(0, document.body.scrollHeight);
+}
+
 function setDarkMode() {
    let theeme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
    document.documentElement.setAttribute('data-bs-theme', theeme);
