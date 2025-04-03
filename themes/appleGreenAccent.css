@@ -1,0 +1,11 @@
+:root {
+   --accent: #7ca728;
+}
+@media (prefers-color-scheme: dark) {
+   :root {
+      --accent: #a8d44f;
+   }
+}
+a, ul.collapse a[data-bs-toggle] {
+   color: var(--accent);
+}
