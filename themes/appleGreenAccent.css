@@ -9,3 +9,6 @@
 a, ul.collapse a[data-bs-toggle] {
    color: var(--accent);
 }
+a[href=""] {
+   color: #e44d2e !important;
+}
