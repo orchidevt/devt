@@ -53,7 +53,8 @@ function scrollie() {
 }
 
 function scrollieSoccer() {
-   window.scrollTo(0, document.body.scrollHeight);
+   let helpp = document.querySelector("footer");
+   helpp.scrollIntoView();
 }
 
 function setDarkMode() {
