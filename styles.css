@@ -24,7 +24,7 @@
    }
 }
 @media (prefers-color-scheme: dark) {
-   a[onclick], .alert, body, .text-bg-danger > ul, .modal-content, table, .toast {
+   a[onclick="scrollie()"], .alert, body, .text-bg-danger > ul, .modal-content, table, .toast {
       background-color: #000;
    }
    footer p {
@@ -58,21 +58,16 @@ a[data-bs-toggle="modal"] {
 a[href=""] {
    color: var(--bs-danger);
 }
-a[onclick] {
+a[onclick="scrollie()"] {
    padding: 0 .5rem;
    position: fixed;
    right: 10px;
+   bottom: 10px;
    z-index: 2;
    border-radius: 9px;
    border: 2px solid rgba(255,255,255,0.7);
    font-size: 19px;
    background-color: var(--bs-body);
-}
-a[onclick="scrollie()"] {
-   bottom: 50px;
-}
-a[onclick="scrollieSoccer()"] {
-   bottom: 10px;
 }
 .alert ul {
    margin-bottom: 0;
