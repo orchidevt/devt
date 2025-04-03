@@ -36,18 +36,18 @@
    img {
       filter: brightness(80%) contrast(110%);
    }
-   ul.collapse a[data-bs-toggle] {
+   /*ul.collapse a[data-bs-toggle] {
       color: var(--bs-primary-text-emphasis);
-   }
+   }*/
 }
 @media (prefers-color-scheme: light) {
    .text-bg-danger > ul {
       background-color: #fff;
       color: #000;
    }
-   ul.collapse a[data-bs-toggle] {
+   /*ul.collapse a[data-bs-toggle] {
       color: var(--bs-primary);
-   }
+   }*/
 }
 a {
    text-decoration-line: none;
