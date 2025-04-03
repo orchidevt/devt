@@ -1,4 +1,4 @@
-@import url("https://orchidevt.github.io/devt/themes/appleGreenAccent.css");
+@import url("themes/appleGreenAccent.css");
 @media (min-width: 768px) {
    #b {
       display: flex;
@@ -24,7 +24,7 @@
    }
 }
 @media (prefers-color-scheme: dark) {
-   a[onclick="scrollie()"], .alert, body, .text-bg-danger > ul, .modal-content, table, .toast {
+   a[onclick], .alert, body, .text-bg-danger > ul, .modal-content, table, .toast {
       background-color: #000;
    }
    footer p {
@@ -58,16 +58,21 @@ a[data-bs-toggle="modal"] {
 a[href=""] {
    color: var(--bs-danger);
 }
-a[onclick="scrollie()"] {
+a[onclick] {
    padding: 0 .5rem;
    position: fixed;
-   bottom: 10px;
    right: 10px;
    z-index: 2;
    border-radius: 9px;
    border: 2px solid rgba(255,255,255,0.7);
    font-size: 19px;
    background-color: var(--bs-body);
+}
+a[onclick="scrollie()"] {
+   bottom: 50px;
+}
+a[onclick="scrollieSoccer()"] {
+   bottom: 10px;
 }
 .alert ul {
    margin-bottom: 0;
@@ -140,6 +145,11 @@ h6 {
    background-color: var(--bs-tertiary-bg);
    padding: .25rem 1rem;
    margin-bottom: 1rem;
+   display: flex;
+   flex-wrap: wrap;
+}
+.hatnote a {
+   margin-left: .25rem;
 }
 #hd {
    font-size: 29px;
