@@ -24,7 +24,7 @@
    }
 }
 @media (prefers-color-scheme: dark) {
-   a[onclick="scrollie()"], .alert, body, .text-bg-danger > ul, .modal-content, table, .toast {
+   a[onclick="scrollie()"], a[onclick="scrollieSoccer()"], .alert, body, .text-bg-danger > ul, .modal-content, table, .toast {
       background-color: #000;
    }
    footer p {
@@ -58,7 +58,7 @@ a[data-bs-toggle="modal"] {
 a[href=""] {
    color: var(--bs-danger);
 }
-a[onclick="scrollie()"] {
+a[onclick="scrollie()"], a[onclick="scrollieSoccer()"] {
    padding: 0 .5rem;
    position: fixed;
    right: 10px;
