@@ -12,3 +12,7 @@ a, ul.collapse a[data-bs-toggle] {
 a[href=""] {
    color: #e44d2e !important;
 }
+::selection {
+   background-color: #cce698;
+   color: #000;
+}
