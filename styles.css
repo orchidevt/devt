@@ -1,0 +1,87 @@
+@import url("https://orchidevt.github.io/devt/themes/appleGreenAccent.css");
+a {
+   text-decoration-line: none;
+}
+a h1 {
+   color: var(--bs-body-color);
+}
+a[href=""] {
+   color: var(--bs-danger);
+}
+body {
+   font-family: "Roboto Flex", "Roboto", sans-serif;
+   padding: 1.75rem 1.25rem;
+}
+.btn-close {
+   float: right;
+   opacity: inherit;
+}
+#floaties {
+   position: fixed;
+   right: 10px;
+   bottom: 10px;
+   display: flex;
+   flex-direction: column;
+   z-index: 2;
+}
+#floaties * {
+   padding: .1rem .5rem;
+   margin: .1rem 0;
+   border-radius: 7px;
+   border: 2px solid rgba(255,255,255,0.2);
+   font-size: 19px;
+   background-color: var(--bs-body-bg);
+}
+h1 {
+   font-size: 25px;
+   font-family: "Neucha", "Noto Serif", serif;
+   margin: 1.5rem 0 1rem;
+   margin-right: auto;
+   padding-bottom: .3rem;
+   border-bottom: 1px solid var(--bs-border-color);
+}
+h1 i {
+   opacity: 77%;
+}
+h6 {
+   font-weight: bold;
+}
+.hatnote {
+   font-size: 14px;
+   background-color: var(--bs-tertiary-bg);
+   padding: .25rem 1rem;
+   margin-bottom: 1rem;
+}
+i {
+   margin-right: .5rem;
+}
+img {
+   padding: 1rem;
+   width: 100%;
+   height: auto;
+}
+.toast {
+   margin-bottom: 1rem;
+   width: 100%;
+   box-shadow: none;
+   opacity: 85%;
+}
+.toast-body ul {
+   margin-bottom: 0;
+}
+@media (min-width: 768px) {
+   .float-md-end {
+      margin-left: 1.5rem !important;
+   }
+   .float-md-start {
+      margin-right: 1.5rem !important;
+   }
+   h1, .hatnote, .toast {
+      overflow: hidden;
+   }
+}
+@media (prefers-color-scheme: dark) {
+   img {
+      filter: brightness(80%) contrast(110%);
+   }
+}
