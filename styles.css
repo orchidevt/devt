@@ -37,6 +37,9 @@ body {
    background-color: var(--bs-body-bg);
    opacity: 77%;
 }
+#floaties i {
+   margin-left: .5rem;
+}
 h1 {
    font-size: 25px;
    font-family: "Neucha", "Noto Serif", serif;
