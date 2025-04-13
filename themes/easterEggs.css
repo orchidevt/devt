@@ -1,0 +1,36 @@
+:root {
+   --accent: #44C1AE;
+   --bg: #fffdfa;
+   --danger: #f9429e;
+   --text: #11a110;
+   --subtle: #fff8e7;
+}
+@media (prefers-color-scheme: dark) {
+   :root {
+      --accent: #36a393;
+      --bg: #1a1110;
+      --danger: #ed7a9b;
+      --text: #fffdfa;
+      --subtle: #2e1e1c;
+   }
+}
+a {
+   color: var(--accent);
+}
+a h1 {
+   color: var(--text);
+}
+a[href=""] {
+   color: var(--danger) !important;
+}
+body, #floaties * {
+   background-color: var(--bg) !important;
+   color: var(--text);
+}
+.hatnote {
+   background-color: var(--subtle) !important;
+}
+::selection {
+   background-color: var(--accent);
+   color: var(--bg);
+}
