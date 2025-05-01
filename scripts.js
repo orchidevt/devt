@@ -10,7 +10,7 @@ function collapsibles() {
       collapsible.className += " collapse";
       
       heads[i].outerHTML = '<a onclick="toggleHeadingArrow(event)" data-bs-toggle="collapse" data-bs-target="#' + placeholder + '">' + heads[i].outerHTML + '</a>';
-      heads[i].innerHTML = '<i class="fas fa-angle-down"></i>' + heads[i].innerHTML;
+      heads[i].innerHTML = '<i class="fa fa-angle-down"></i>' + heads[i].innerHTML;
    }
 }
 
