@@ -1,0 +1,36 @@
+:root {
+   --accent: #ce193e;
+   --bg: #fefdfc;
+   --danger: #b41c4f;
+   --text: #1d1514;
+   --subtle: rgba(29, 21, 20, 0.2);
+}
+@media (prefers-color-scheme: dark) {
+   :root {
+      --accent: #e84868;
+      --bg: #1d1514;
+      --danger: #b41c4f;
+      --text: #fefdfc;
+      --subtle: rgba(254, 253, 252, 0.2);
+   }
+}
+a {
+   color: var(--accent);
+}
+a h1 {
+   color: var(--text) !important;
+}
+a[href=""] {
+   color: var(--danger) !important;
+}
+body, #floaties * {
+   background-color: var(--bg) !important;
+   color: var(--text);
+}
+.hatnote {
+   background-color: var(--subtle) !important;
+}
+::selection {
+   background-color: var(--accent);
+   color: var(--bg);
+}
