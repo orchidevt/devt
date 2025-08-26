@@ -6,19 +6,36 @@ a:active {
    text-decoration-line: underline;
    filter: brightness(90%);
 }
+a[data-bs-toggle="collapse"]:hover {
+   text-decoration-line: none;
+}
 a h1 {
    color: var(--bs-body-color);
 }
 a[href=""] {
    color: var(--bs-danger);
 }
+a[onclick="showText(event)"], a[data-bs-toggle="modal"] {
+   color: var(--accent) !important;
+}
 body {
    font-family: "Roboto Flex", "Roboto", sans-serif;
-   padding: 1.75rem 1.25rem;
+   padding: 1.75rem 1.25rem 1.25rem;
 }
 .btn-close {
    float: right;
    opacity: inherit;
+}
+button.btn {
+   background-color: var(--accent);
+   color: var(--bg);
+   margin: .25rem;
+}
+div.d-flex button {
+   background-color: var(--accent);
+   color: var(--bg);
+   margin: 1px;
+   width: 49%;
 }
 #floaties {
    position: fixed;
@@ -40,13 +57,17 @@ body {
 #floaties i {
    margin-left: .5rem;
 }
+footer {
+   font-size: 14px;
+   padding: .5rem -75rem;
+}
 h1 {
    font-size: 25px;
    font-family: "Neucha", "Noto Serif", serif;
    margin: 1.5rem 0 1rem;
    margin-right: auto;
    padding-bottom: .3rem;
-   border-bottom: 1px solid var(--bs-border-color);
+   border-bottom: 1px solid var(--subtle);
 }
 h1 i {
    opacity: 77%;
@@ -56,36 +77,86 @@ h6 {
 }
 .hatnote {
    font-size: 14px;
-   background-color: var(--bs-tertiary-bg);
    padding: .25rem 1rem;
    margin-bottom: 1rem;
+}
+header {
+   margin: -.75rem 0 1.5rem;
+   padding: 0;
 }
 i {
    margin-right: .5rem;
 }
+.icon {
+   width: 16px;
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
 img {
-   padding: 1rem;
-   width: 100%;
+   margin: 5%;
+   padding: .5rem;
+   width: 90%;
    height: auto;
+   border: 1px solid var(--subtle);
+}
+.modal-dialog {
+   top: 33vh;
+   border-radius: 0;
+}
+.row, .col-md-6 {
+   margin: 0;
+   padding: 0;
+}
+table, tr {
+   border: 1px solid var(--subtle);
+   font-size: 14px;
+   width: 100%;
+}
+td {
+   padding: .75rem;
+}
+td:first-child {
+   font-weight: bold;
+   text-align: center;
+   width: 50%;
+}
+td small {
+   margin-left: .5rem;
+}
+th[colspan="2"] {
+   text-align: center;
+   padding: .5em;
+   background-color: var(--subtle);
 }
 .toast {
    margin-bottom: 1rem;
    width: 100%;
    box-shadow: none;
    opacity: 85%;
+   background-color: var(--bg);
+   color: var(--text);
+   border: 1px solid var(--subtle);
 }
 .toast-body ul {
    margin-bottom: 0;
 }
+.card, .modal-body {
+   color: var(--text);
+   background-color: var(--bg);
+}
 @media (min-width: 768px) {
-   .float-md-end {
-      margin-left: 1.5rem !important;
-   }
-   .float-md-start {
-      margin-right: 1.5rem !important;
+   body {
+      padding-left: 5vw;
+      padding-right: 5vw;
    }
    h1, .hatnote, .toast {
       overflow: hidden;
+   }
+   table {
+      width: 300px;
+      float: right;
+      margin-left: 1.5rem;
    }
 }
 @media (prefers-color-scheme: dark) {
@@ -94,5 +165,8 @@ img {
    }
    img {
       filter: brightness(80%) contrast(110%);
+   }
+   .icon {
+      filter: invert(100%);
    }
 }
