@@ -27,6 +27,27 @@ function setDarkMode() {
    document.documentElement.setAttribute('data-bs-theme', theeme);
 }
 
+function showText(event) {
+   var toggler = event.currentTarget;
+   toggler.innerText = (toggler.innerText == "[ show ]") ? "[ hide ]": "[ show ]";
+}
+
+function themeToggler(theme) {
+   var styleShit = document.getElementsByTagName("style")[0];
+   if (styleShit) {
+      var styleText = styleShit.innerText;
+      var splitShit = styleText.split(";");
+      splitShit = splitShit[0].split("/");
+      var oldTheme = splitShit[5].slice(0, -6);
+      styleShit.innerText = styleShit.innerText.replace(oldTheme, theme);
+   }
+   else {
+      const newStyleShit = document.createElement("style");
+      newStyleShit.innerText = '@import url("https://orchidevt.github.io/devt/themes/' + theme + '.css");';
+      document.head.appendChild(newStyleShit);
+   }
+}
+
 function toggleHeadingArrow(event) {
    var triggerHeading = event.currentTarget;
    var mid = triggerHeading.children[0];
