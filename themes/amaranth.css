@@ -3,7 +3,7 @@
    --bg: #fefdfc;
    --danger: #b41c4f;
    --text: #1d1514;
-   --subtle: rgba(29, 21, 20, 0.2);
+   --subtle: #f7f2ea;
 }
 @media (prefers-color-scheme: dark) {
    :root {
@@ -11,7 +11,7 @@
       --bg: #1d1514;
       --danger: #b41c4f;
       --text: #fefdfc;
-      --subtle: rgba(254, 253, 252, 0.2);
+      --subtle: #2E1E1C;
    }
 }
 a {
