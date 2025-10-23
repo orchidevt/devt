@@ -1,4 +1,4 @@
-@import url("https://orchidevt.github.io/devt/themes/amaranth.css");
+@import url("https://orchidevt.github.io/devt/themes/amaranth2.css");
 a {
    text-decoration-line: none;
 }
@@ -9,15 +9,6 @@ a:active {
 a[data-bs-toggle="collapse"]:hover {
    text-decoration-line: none;
 }
-a h1 {
-   color: var(--bs-body-color);
-}
-a[href=""] {
-   color: var(--bs-danger);
-}
-a[onclick="showText(event)"], a[data-bs-toggle="modal"] {
-   color: var(--accent) !important;
-}
 body {
    font-family: "Roboto Flex", "Roboto", sans-serif;
    padding: 1.75rem 1.25rem 1.25rem;
@@ -27,16 +18,14 @@ body {
    opacity: inherit;
 }
 button.btn {
-   background-color: var(--accent);
-   color: var(--bg);
    margin: .25rem;
 }
-div.d-flex button {
+/*div.d-flex button {
    background-color: var(--accent);
    color: var(--bg);
    margin: 1px;
    width: 49%;
-}
+}*/
 #floaties {
    position: fixed;
    right: 10px;
@@ -51,7 +40,6 @@ div.d-flex button {
    border-radius: 0;
    border: 1px solid var(--text);
    font-size: 19px;
-   background-color: var(--bs-body-bg);
    opacity: 77%;
 }
 #floaties i {
@@ -67,7 +55,7 @@ h1 {
    margin: 1.5rem 0 1rem;
    margin-right: auto;
    padding-bottom: .3rem;
-   border-bottom: 1px solid var(--subtle);
+   border-bottom: 1px solid var(--border);
 }
 h1 i {
    opacity: 77%;
@@ -81,6 +69,7 @@ h6 {
    margin-bottom: 1rem;
 }
 header {
+   font-size: 14px;
    margin: -.75rem 0 1.5rem;
    padding: 0;
 }
@@ -94,22 +83,20 @@ i {
    margin: 0;
 }
 img {
-   margin: 5%;
+   margin: 15%;
    padding: .5rem;
-   width: 90%;
+   width: 70%;
    height: auto;
-   border: 1px solid var(--subtle);
 }
-.modal-dialog {
+/*.modal-dialog {
    top: 33vh;
    border-radius: 0;
-}
+}*/
 .row, .col-md-6 {
    margin: 0;
    padding: 0;
 }
 table, tr {
-   border: 1px solid var(--subtle);
    font-size: 14px;
    width: 100%;
 }
@@ -134,16 +121,9 @@ th[colspan="2"] {
    width: 100%;
    box-shadow: none;
    opacity: 85%;
-   background-color: var(--bg);
-   color: var(--text);
-   border: 1px solid var(--subtle);
 }
 .toast-body ul {
    margin-bottom: 0;
-}
-.card, .modal-body {
-   color: var(--text);
-   background-color: var(--bg);
 }
 @media (min-width: 768px) {
    body {
