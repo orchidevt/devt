@@ -1,0 +1,65 @@
+:root {
+   --text: rgb(28, 19, 18);
+   --bg: #FDFCFC;
+   --subtle: #FAF8F8;
+   --border: rgba(28, 19, 18, 0.1);
+   --accent: #CE193E;
+   /*--success: #000;*/
+   --danger: #DC343B;
+   /* --warning: #000;*/
+}
+@media (prefers-color-scheme: dark) {
+   :root {
+      --text: rgb(246, 241, 240);
+      --bg: #1E1413;
+      --subtle: #231817;
+      --border: rgba(246, 241, 240, 0.1);
+      --accent: #DE1B42;
+      /*--success: #000;*/
+      --danger: #DF4149;
+      /*--warning: #000;*/
+   }
+}
+
+a {
+   color: var(--accent);
+}
+a h1 {
+   color: var(--text) !important;
+}
+a[href=""] {
+   color: var(--danger) !important;
+}
+a[onclick="showText(event)"], a[data-bs-toggle="modal"] {
+   color: var(--accent) !important;
+}
+body, .card, #floaties *, .modal-body, .nav-link, .toast {
+   background-color: var(--bg) !important;
+   color: var(--text);
+}
+button.btn {
+   background-color: var(--accent);
+   color: var(--bg);
+}
+.hatnote {
+   background-color: var(--subtle) !important;
+}
+img, .nav, table, tr, .toast {
+   border: 1px solid var(--border);
+}
+nav button.active {
+   background-color: var(--subtle) !important;
+   color: var(--text) !important;
+}
+button.nav-link:hover {
+   background-color: var(--subtle) !important;
+   color: var(--text) !important;
+}
+button.nav-link:active {
+   background-color: var(--subtle) !important;
+   color: var(--text) !important;
+}
+::selection {
+   background-color: var(--accent);
+   color: var(--bg);
+}
