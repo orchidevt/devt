@@ -33,7 +33,7 @@ a[href=""] {
 a[onclick="showText(event)"], a[data-bs-toggle="modal"] {
    color: var(--accent) !important;
 }
-body, .card, #floaties *, .modal-body, .nav-link, .toast {
+body, .card, #floaties *, .list-group, .list-group-item, .modal-body, .nav-link, .toast {
    background-color: var(--bg) !important;
    color: var(--text);
 }
