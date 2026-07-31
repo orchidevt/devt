@@ -1,4 +1,6 @@
-@import url("https://orchidevt.github.io/devt/themes/amaranth2.css");
+//@import url("https://orchidevt.github.io/devt/themes/amaranth2.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
 a {
    text-decoration-line: none;
 }
@@ -25,6 +27,7 @@ button.btn {
    color: var(--bg);
    margin: 1px;
    width: 49%;
+   wtf was i on
 }*/
 #floaties {
    position: fixed;
@@ -51,7 +54,7 @@ footer {
 }
 h1 {
    font-size: 25px;
-   font-family: "Neucha", "Noto Serif", serif;
+   font-family: "Gelasio", serif;
    margin: 1.5rem 0 1rem;
    margin-right: auto;
    padding-bottom: .3rem;
