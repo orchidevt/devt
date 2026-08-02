@@ -1,0 +1,60 @@
+:root {
+   --accent: #286983;
+   --bg: #faf4ed;
+   --border: #f2e9e1;
+   --danger: #d7827e;
+   --text: #464261;
+   --subtle: #f4ede8;
+}
+@media (prefers-color-scheme: dark) {
+   :root {
+      --accent: #c4a7e7;
+      --bg: #191724;
+      --border: #26233a;
+      --danger: #eb6f92;
+      --text: #e0def4;
+      --subtle: #21202e;
+   }
+}
+a {
+   color: var(--accent);
+}
+a h1 {
+   color: var(--text) !important;
+}
+a[href=""] {
+   color: var(--danger) !important;
+}
+a[onclick="showText(event)"], a[data-bs-toggle="modal"] {
+   color: var(--accent) !important;
+}
+body, .card, #floaties *, .list-group, .list-group-item, .modal-body, .nav-link, .toast {
+   background-color: var(--bg) !important;
+   color: var(--text);
+}
+button.btn {
+   background-color: var(--accent);
+   color: var(--bg);
+}
+.hatnote {
+   background-color: var(--subtle) !important;
+}
+img, .nav, table, tr, .toast {
+   border: 1px solid var(--border);
+}
+nav button.active {
+   background-color: var(--subtle) !important;
+   color: var(--text) !important;
+}
+button.nav-link:hover {
+   background-color: var(--subtle) !important;
+   color: var(--text) !important;
+}
+button.nav-link:active {
+   background-color: var(--subtle) !important;
+   color: var(--text) !important;
+}
+::selection {
+   background-color: var(--accent);
+   color: var(--bg);
+}
